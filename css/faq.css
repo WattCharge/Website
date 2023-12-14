@@ -1,0 +1,270 @@
+:root {
+    --main-color: #7df8ff54;
+    --main-color: #7DF9FF;
+    --third-color: #212534;
+    --text-color: #ffffff;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--third-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background: lighten(var(--main-color), 20%);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background:var(--main-color);
+}
+
+.transition {
+    transition: all 0.25s ease-in-out;
+}
+
+.flipIn {
+    animation: flipdown 0.5s ease both;
+}
+
+.no-select {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+#faq {
+    width: 100%;
+    min-height: 1000px;
+    max-height: fit-content; 
+    background-color: var(--third-color)
+}
+
+.faq.container{
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    margin: 90px 0;
+    transform: translate(-50%, 0);
+    box-shadow: 0 10px 0 0 var(--main-color) inset;
+    padding: 15px;
+}
+
+#faq .faq.title,
+.list h2 {
+    color: var(--text-color);
+}
+
+.faq.title {
+    font-size: 36px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    animation: flipdown 0.5s ease both;
+}
+
+.list h2 {
+    width: 100%;
+    padding: 10px;
+    padding-right: 20px;
+    font-size: 23px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    display: block;
+    margin: 0;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+}
+.list h2::before {
+    content: "";
+    width: 3px;
+    height: 70%;
+    position: absolute;
+    top: 15%;
+    left: -3px;
+    background-image: linear-gradient(to bottom, var(--main-color), transparent);
+}
+.list p {
+    color: var(--text-color);
+    font-size: 17px;
+    line-height: 26px;
+    letter-spacing: 1px;
+    position: relative;
+    overflow: hidden;
+    max-height: 800px;
+    transition: all 0.25s ease-in-out;
+    opacity: 1;
+    transform: translate(0, 0);
+    margin-top: 14px;
+    z-index: 2;
+    padding: 10px;
+    padding-right: 20px;
+    background-image: linear-gradient(to right , #7df8ff34, transparent);
+}
+
+#faq .lists {
+    list-style: none;
+    perspective: 900;
+    padding: 0;
+    margin: 0;
+}
+
+.list{
+    position: relative;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 4px;
+    padding-top: 18px;
+    border-top: 1px solid var(--main-color);
+    animation: flipdown 0.5s ease both;
+
+    &:nth-of-type(1) {
+        animation-delay: 0.5s;
+    }
+
+    &:nth-of-type(2) {
+        animation-delay: 0.75s;
+    }
+
+    &:nth-of-type(3) {
+        animation-delay: 1.0s;
+    }
+    &:nth-of-type(4) {
+        animation-delay: 1.25s;
+    }
+    &:nth-of-type(5) {
+        animation-delay: 1.5s;
+    }
+    &:nth-of-type(6) {
+        animation-delay: 1.75s;
+    }
+    &:nth-of-type(7) {
+        animation-delay: 2.0s;
+    }
+    &:nth-of-type(8) {
+        animation-delay: 2.25s;
+    }
+
+    &:last-of-type {
+        padding-bottom: 0;
+    }
+
+    i {
+        position: absolute;
+        transform: translate(-6px, 0);
+        margin-top: 16px;
+        right: 0;
+    }
+
+    i:before,
+    i:after {
+        content: "";
+        transition: all 0.25s ease-in-out;
+        position: absolute;
+        background-color: var(--main-color);
+        width: 3px;
+        height: 9px;
+    }
+
+    i:before {
+        transform: translate(-2px, 0) rotate(45deg);
+    }
+
+    i:after {
+        transform: translate(2px, 0) rotate(-45deg);
+    }
+}
+
+input[type="checkbox"] {
+    position: absolute;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+
+    &:checked {
+        &~p {
+            margin-top: 0;
+            max-height: 0;
+            opacity: 0;
+            transform: translate(0, 50%);
+        }
+
+        &~i {
+            &:before {
+                transform: translate(2px, 0) rotate(45deg);
+            }
+
+            &:after {
+                transform: translate(-2px, 0) rotate(-45deg);
+            }
+        }
+    }
+}
+
+@keyframes flipdown {
+    0% {
+        opacity: 0;
+        transform-origin: top center;
+        transform: rotateX(-90deg);
+    }
+
+    5% {
+        opacity: 1;
+    }
+
+    80% {
+        transform: rotateX(8deg);
+    }
+
+    83% {
+        transform: rotateX(6deg);
+    }
+
+    92% {
+        transform: rotateX(-3deg);
+    }
+
+    100% {
+        transform-origin: top center;
+        transform: rotateX(0deg);
+    }
+}
+@media screen and (min-width: 769px){
+    .faq.container{
+        min-width: 50%;
+        max-width: 1400px;
+    }
+}
+@media screen and (min-width: 0px) and (max-width: 768px) {
+    #faq {
+        width: 100%;
+        min-height: 700px;
+        max-height: fit-content ;
+    }
+    .faq.container{
+        margin: 90px 0 !important;
+    }
+    .faq.title {
+        font-size: 30px;
+        font-weight: 600;
+    }
+    .list h2 {
+        font-size: 20px;
+    }
+    .list p {
+        font-size: 15px;
+    }
+}

@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/cstyle.css" />
+    <link rel="stylesheet" href="css/faq.css" />
+    <!-- Font Awesome Library -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- Render All Elements Normally -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- LOGO ICON -->
+    <link rel="icon" sizes="32x32" href="img/logo-icon.svg" type="image/png">
+
+    <title>WattCharge</title>
+</head>
+
+<body>
+
+    <!-- Start Header -->
+    <header id="header">
+        <div class="container" id="navbox">
+            <span id="logo"><a href="#" class="logo">WattCharge</a></span>
+            <nav>
+                <i class="fas fa-bars toggle-menu" id="menu-icon" true></i>
+                <ul id="menu-list">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="src/about.html">Services</a></li>
+                    <li><a href="src/about.html">About</a></li>
+                    <li><a href="src/contact.html">Contact</a></li>
+                </ul>
+                <div class="form">
+                    <i class="fas fa-search"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- Start Home -->
+    <div class="header home">
+        <div class="inner-header flex">
+            <h1 id="head_part_one">Are You Ready To Revolutionize Your <br id="brk">Electric Driving Experience?<br><span id="head_part_two">Look no further than <br><span id="tit_watt">WATTCHARGE</span></span></h1>
+        </div>
+        <div>
+            <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                <defs>
+                    <path id="gentle-wave"
+                        d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                </defs>
+                <g class="parallax">
+                    <use xlink:href="#gentle-wave" x="48" y="0" fill="#619ec1 " />
+                    <use xlink:href="#gentle-wave" x="48" y="3" fill="#155c85" />
+                    <use xlink:href="#gentle-wave" x="48" y="5" fill="#0d3851" />
+                    <use xlink:href="#gentle-wave" x="48" y="7" fill="#212534" />
+                </g>
+            </svg>
+        </div>
+    </div>
+    <!--End Home-->
+
+    <!-- Start Timer -->
+    <section id="timer">
+        <div class="container timer">
+            <h1 id="headline">
+                <span id="first-title-part">Countdown to the Future</span>
+                <span id="launch_date">
+                    <div id=flip>
+                        <div class="flip_date"><div>2024</div></div>
+                        <div class="flip_date"><div>Feb 02 24</div></div>
+                        <div class="flip_date"><div>Watt Charge</div></div>
+                    </div>
+                </span>
+            </h1>
+            <div id="countdown">
+                <ul>
+                    <li><span id="days"></span>days</li>
+                    <li><span id="hours"></span>Hours</li>
+                    <li><span id="minutes"></span>Minutes</li>
+                    <li><span id="seconds"></span>Seconds</li>
+                </ul>
+            </div>
+            <p class="">The clock is ticking, and we are just days away from the grand launch of Wattcharge</p>
+        </div>
+    </section>
+    <!-- End Timer -->
+
+    <!-- Start Services -->
+    <div id="cont">
+        <div class="wrapper">
+            <div class="card one" id="cardone">
+                <input type="checkbox" id="card1" class="more" aria-hidden="true">
+                <div class="content">
+                    <div class="front" id="imgone">
+                        <div class="inner">
+                            <h2>Emergency Charging</h2>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <label for="card1" class="button" aria-hidden="true">
+                                Details
+                            </label>
+                        </div>
+                    </div>
+                    <div class="back">
+                        <div class="inner">
+                            <div class="info">
+                                <span>4</span>
+                                <div class="icon">
+                                    <i class="fa-solid fa-battery-full"></i>
+                                    <span>Valuable</span>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <span>3</span>
+                                <div class="icon">
+                                    <i class="fa-solid fa-leaf"></i>
+                                    <span>Clean</span>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <span>2</span>
+                                <div class="icon">
+                                    <i class="fa-solid fa-bolt"></i>
+                                    <span>Turbo</span>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <span>1</span>
+                                <div class="icon">
+                                    <i class="fa-solid fa-charging-station"></i>
+                                    <span>Multi-Way</span>
+                                </div>
+                            </div>
+                            <div class="description">
+                                <p>Life is full of surprises, and we understand that your electric vehicle might need a
+                                    boost at the most unexpected times. Wattcharge provides Emergency Charge services,
+                                    ensuring that you have a reliable solution when you find yourself in need of an
+                                    immediate power-up. Whether it's a last-minute meeting or an unplanned journey,
+                                    count on us to get you back on the road swiftly.</p>
+                            </div>
+                            <div class="location">United Arab Emirates</div>
+                            <div class="price">24 / 7 Support</div>
+                            <label for="card1" class="button return" aria-hidden="true">
+                                <i class="fas fa-arrow-left"></i>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card two" id="cardtwo">
+                <input type="checkbox" id="card2" class="more">
+                <div class="content">
+                    <div class="front" id="imgtwo">
+                        <div class="inner">
+                            <h2>Tailored Appointments, Anywhere, Anytime</h2>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <label for="card2" class="button" aria-hidden="true">
+                                Details
+                            </label>
+                        </div>
+                    </div>
+                    <div class="back">
+                        <div class="inner">
+                            <div class="info">
+                                <span>4</span>
+                                <div class="icon">
+                                    <i class="fa-solid fa-battery-full"></i>
+                                    <span>Valuable</span>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <span>3</span>
+                                <div class="icon">
+                                    <i class="fa-solid fa-leaf"></i>
+                                    <span>Clean</span>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <span>2</span>
+                                <div class="icon">
+                                    <i class="fa-solid fa-bolt"></i>
+                                    <span>Turbo</span>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <span>1</span>
+                                <div class="icon">
+                                    <i class="fa-solid fa-charging-station"></i>
+                                    <span>Multi-Way</span>
+                                </div>
+                            </div>
+                            <div class="description">
+                                <p>Planning is key, especially when it comes to managing your electric vehicle charging
+                                    needs. With Wattcharge, you have the flexibility to schedule your charging
+                                    appointments in advance. Choose the time and location that suits your agenda, and
+                                    enjoy the convenience of a well-planned charging routine. Our user-friendly platform
+                                    allows you to book slots seamlessly, ensuring that your electric vehicle is ready
+                                    for your next adventure.</p>
+                            </div>
+                            <div class="location">United Arab Emirates</div>
+                            <div class="price">24 / 7 Support</div>
+                            <label for="card2" class="button return" aria-hidden="true">
+                                <i class="fas fa-arrow-left"></i>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card three" id="cardthree">
+                <input type="checkbox" id="card3" class="more">
+                <div class="content">
+                    <div class="front" id="imgthree">
+                        <div class="inner">
+                            <h2>WattCharge EV Power Bank</h2>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <label for="card3" class="button" aria-hidden="true">
+                                Details
+                            </label>
+                        </div>
+                    </div>
+                    <div class="back">
+                        <div class="inner">
+                            <div class="info">
+                                <span>4</span>
+                                <div class="icon">
+                                    <i class="fa-solid fa-battery-full"></i>
+                                    <span>Valuable</span>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <span>3</span>
+                                <div class="icon">
+                                    <i class="fa-solid fa-leaf"></i>
+                                    <span>Clean</span>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <span>2</span>
+                                <div class="icon">
+                                    <i class="fa-solid fa-bolt"></i>
+                                    <span>Turbo</span>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <span>1</span>
+                                <div class="icon">
+                                    <i class="fa-solid fa-charging-station"></i>
+                                    <span>Multi-Way</span>
+                                </div>
+                            </div>
+                            <div class="description">
+                                <p>Experience the next level of freedom with the Wattcharge EV Power Bank, a
+                                    revolutionary solution for electric vehicle owners. Our Power Bank redefines the way
+                                    you charge your EV, offering unparalleled convenience and flexibility.</p>
+                                <p>No longer tethered to fixed charging stations, the Wattcharge EV Power Bank empowers
+                                    you to charge your electric vehicle wherever your journey takes you. Compact,
+                                    portable, and equipped with cutting-edge technology, this power-packed companion
+                                    ensures you're never caught off guard with a low battery.</p>
+                                <p>Whether you're exploring the great outdoors, navigating the urban landscape, or
+                                    embarking on a road trip, the Wattcharge EV Power Bank provides a reliable and
+                                    efficient charge on demand. Its sleek design and user-friendly interface make it a
+                                    seamless addition to your electric lifestyle.</p>
+                            </div>
+                            <div class="location">United Arab Emirates</div>
+                            <div class="price">24 / 7 Support</div>
+                            <label for="card3" class="button return" aria-hidden="true">
+                                <i class="fas fa-arrow-left"></i>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Services -->
+
+    <!-- Start Car Brands -->
+    <section class="car_brand" id="car_brand">
+        <div id="title">Fully compatible with the following car brands</div>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="img/carbrand/citroen-2.svg" alt="Car Brand 1"></div>
+                <div class="swiper-slide"><img src="img/carbrand/honda-9.svg" alt="Car Brand 2"></div>
+                <div class="swiper-slide"><img src="img/carbrand/tesla.svg" alt="Car Brand 3"></div>
+                <div class="swiper-slide"><img src="img/carbrand/ford-7.svg" alt="Car Brand 4"></div>
+                <div class="swiper-slide"><img src="img/carbrand/hyundai.svg" alt="Car Brand 5"></div>
+                <div class="swiper-slide"><img src="img/carbrand/jaguar-1.svg" alt="Car Brand 6"></div>
+                <div class="swiper-slide"><img src="img/carbrand/byd-auto-1.svg" alt="Car Brand 7"></div>
+                <div class="swiper-slide"><img src="img/carbrand/mazda-6.svg" alt="Car Brand 8"></div>
+                <div class="swiper-slide"><img src="img/carbrand/bmw-mini-1.svg" alt="Car Brand 9"></div>
+                <div class="swiper-slide"><img src="img/carbrand/fiat-logo-1.svg" alt="Car Brand 10"></div>
+                <div class="swiper-slide"><img src="img/carbrand/merc.svg" alt="Car Brand 11"></div>
+                <div class="swiper-slide"><img src="img/carbrand/peugeot-3.svg" alt="Car Brand 12"></div>
+                <div class="swiper-slide"><img src="img/carbrand/porsche-1.svg" alt="Car Brand 13"></div>
+                <div class="swiper-slide"><img src="img/carbrand/skoda-auto.svg" alt="Car Brand 14"></div>
+                <div class="swiper-slide"><img src="img/carbrand/smart-mercedes.svg" alt="Car Brand 15"></div>
+                <div class="swiper-slide"><img src="img/carbrand/toyota-car-logo.svg" alt="Car Brand 16"></div>
+                <div class="swiper-slide"><img src="img/carbrand/volkswagen-logo-till-1995.svg" alt="Car Brand 17">
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <div>
+            <span class="swiper-button-prev flex"></span>
+            <span class="swiper-button-next flex"></span>
+        </div>
+    </section>
+    <!-- End Car Brands -->
+
+    <!-- Start Process -->
+    <section id="process">
+        <div id="process_container">
+            <div id="info">
+                <h2 id="title">Let's get started</h2>
+                <p id="description">It's simple - complete the three steps below to effortlessly power up your electric
+                    vehicle anytime, anywhere, without worrying about its charge level.</p>
+            </div>
+            <div id="cont_steps">
+                <div class="step one flex">
+                    <div class="box">
+                        <div class="icon flex"></div>
+                        <div class="title">Download Wattcharge App</div>
+                        <div class="btn" id="btn_one">Comming Soon</div>
+                    </div>
+                </div>
+                <div id="line"></div>
+                <div class="step two flex">
+                    <div class="box">
+                        <div class="icon flex"></div>
+                        <div class="title">Select the desired service</div>
+                        <div class="btn" id="btn_two">Comming Soon</div>
+                    </div>
+                </div>
+                <div class="step three flex">
+                    <div class="box">
+                        <div class="icon flex"></div>
+                        <div class="title">Order your<br>service</div>
+                        <div class="btn" id="btn_three">Comming Soon</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Process -->
+
+    <!-- Start FAQ -->
+    <section id="faq">
+        <div class="faq container">
+            <h1 class="faq title">Frequently Asked Questions (FAQ)</h1>
+            <ul class="faq lists" id="faq_lists">
+                <li class="list one">
+                    <input type="checkbox" checked>
+                    <i></i>
+                    <h2>What is WattCharge?</h2>
+                    <p>WattCharge, a subsidiary of Sinatra company, stands as a leading electric car charging service
+                        dedicated to providing convenient and flexible charging solutions. Whether you need an emergency
+                        charge, want to schedule in advance, or require a portable power solution, WattCharge, backed by
+                        the expertise of Sinatra company, is here to empower your electric journey.</p>
+                </li>
+                <li class="list two">
+                    <input type="checkbox" checked>
+                    <i></i>
+                    <h2>When is WattCharge launching?</h2>
+                    <p>WattCharge is set to launch on February 4th, 2024, marking the beginning of a new era in
+                        sustainable and hassle-free electric vehicle charging.</p>
+                </li>
+                <li class="list three">
+                    <input type="checkbox" checked>
+                    <i></i>
+                    <h2>What subscription plans does WattCharge offer for scheduled charging?</h2>
+                    <p> WattCharge offers flexible subscription plans, including weekly and monthly options. Choose the
+                        plan that suits your needs and enjoy the convenience of pre-booking your charging appointments.
+                    </p>
+                </li>
+                <li class="list four">
+                    <input type="checkbox" checked>
+                    <i></i>
+                    <h2>Is WattCharge compatible with all electric vehicles?</h2>
+                    <p> Yes, WattCharge is designed to be compatible with a wide range of electric vehicles. Our goal is
+                        to provide a universal charging solution, ensuring accessibility for all EV owners.</p>
+                </li>
+                <li class="list five">
+                    <input type="checkbox" checked>
+                    <i></i>
+                    <h2>Is WattCharge available for commercial fleets or businesses?</h2>
+                    <p> Absolutely! WattCharge offers customized solutions for commercial fleets and businesses. Contact
+                        our business services team through the app or website to discuss your specific requirements and
+                        explore partnership opportunities.</p>
+                </li>
+                <li class="list six">
+                    <input type="checkbox" checked>
+                    <i></i>
+                    <h2>What payment methods are accepted at WattCharge mobile stations?</h2>
+                    <p> WattCharge accepts various payment methods, including credit cards and mobile payment options.
+                        You can view the accepted payment methods and manage your transactions within the WattCharge
+                        app.</p>
+                </li>
+                <li class="list seven">
+                    <input type="checkbox" checked>
+                    <i></i>
+                    <h2>How can I contact WattCharge customer support?</h2>
+                    <p>For any inquiries or assistance, reach out to our dedicated customer support team through the
+                        WattCharge app or visit our Contact Us page on the website.</p>
+                </li>
+                <li class="list eight">
+                    <input type="checkbox" checked>
+                    <i></i>
+                    <h2> How can I provide feedback or report an issue with a WattCharge mobile station?</h2>
+                    <p>Your feedback is valuable! Use the WattCharge app to report any issues or provide feedback on
+                        your charging experience. Our customer support team will address your concerns promptly.</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- End FAQ -->
+
+    <!-- Start Footer -->
+    <footer class="footer-distributed">
+
+        <div class="footer-left">
+            <h3>Watt<span>Charge</span></h3>
+
+            <p class="footer-links">
+                <a href="#">Home</a>
+                |
+                <a href="src/about.html">About</a>
+                |
+                <a href="src/contact.html">Contact</a>
+                |
+                <a href="src/comings.html">Blog</a>
+            </p>
+        </div>
+
+        <div class="footer-center">
+            <div class="footer_details">
+                <i class="fa fa-map-marker"></i>
+                <p>Dubai, United Arab Emirates</p>
+            </div>
+            <div class="footer_details">
+                <i class="fa fa-phone"></i>
+                <p>+971-123456789</p>
+            </div>
+            <div class="footer_details">
+                <i class="fa fa-envelope"></i>
+                <p><a href="mailto:helpme@wattcharge.io">helpme@wattcharge.io</a></p>
+            </div>
+        </div>
+
+        <div class="footer-right">
+            <p class="footer-company-about">
+                <span>About the company</span>
+                <strong>WattCharge</strong> a subsidiary of Sinatra company, stands as a leading electric car charging service
+                dedicated to providing convenient and flexible charging solutions. Whether you need an emergency
+                charge, want to schedule in advance, or require a portable power solution, WattCharge, backed by
+                the expertise of Sinatra company, is here to empower your electric journey.</p>
+            <div class="footer-icons">
+                <span><img src="img/iso/iso-2008-1.webp"></span>
+                <span><img src="img/iso/iso-2015.webp"></span>
+                <span><img src="img/iso/iso-45001-1.webp"></span>
+                <span><img src="img/iso/usas.webp"></span>
+            </div>
+        </div>
+        <p class="copyright">&copy; 2024 <span>WattCharge</span>, All Rights Reserved</p>
+    </footer>
+    <!-- End Footer -->
+
+
+    <script src="master.js"></script>
+    <script src="js/timer.js"></script>
+    <script src="js/main.js"></script>
+
+    <script src="js/swiper-elements.js"></script>
+
+    <!--=============== SCROLL REVEAL===============-->
+    <script src="js/scrollreveal.min.js"></script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="js/swiper-bundle.min.js"></script>
+</body>
+
+</html>
